@@ -1,6 +1,6 @@
 # Benchmarks
 
-This repository is a default Laravel installation and is used to test performance of Docker across various platforms and configurations. 
+This repository is a default Laravel installation and is used to test performance of Docker across various platforms and configurations, using Laravel Sail. 
 
 ## Results
 
@@ -10,6 +10,17 @@ This repository is a default Laravel installation and is used to test performanc
 | Welcome | 12.77  | 43.13        | 36                       | 13.33          | 40.02                    | 39.56                 | 247.74                             | 18.15          | 89.06                |
 
 ## Running the benchmarks
+
+In order to run the benchmarks you will first have to set up the project first:
+
+```bash
+cp .env.example .env
+sail up
+sail artisan key:generate
+sail artisan migrate:fresh --seed
+npm i
+npm run production
+```
 
 There are two benchmarking scripts that can be run:
 
