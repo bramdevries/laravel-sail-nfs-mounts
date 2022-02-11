@@ -22,7 +22,9 @@ npm i
 npm run production
 ```
 
-There are two benchmarking scripts that can be run:
+Finally, in order to run the benchmarks you will need to install [K6](https://k6.io/docs/getting-started/installation/).
+
+There are two benchmarking scripts that can be run.
 
 1. `npm run benchmarks:welcome`: Performs a request to the default welcome screen.
 2. `npm run benchmarks:api`: Performs a request to an API endpoint that returns a user looked up through the database.
