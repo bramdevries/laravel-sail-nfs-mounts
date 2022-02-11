@@ -10,8 +10,8 @@
         "production": "mix --production",
         "start": "sail up",
         "start:nfs": "sail -f docker-compose.nfs.yml up",
-        "benchmarks:welcome": "k6 run tests/Benchmarks/Welcome.js -i 10",
-        "benchmarks:api": "k6 run tests/Benchmarks/Api.js -i 10"
+        "benchmarks:welcome": "k6 run tests/Benchmarks/Welcome.js -i 100",
+        "benchmarks:api": "k6 run tests/Benchmarks/Api.js -i 100"
     },
     "devDependencies": {
         "axios": "^0.21",
