@@ -4,6 +4,15 @@ This repository is a default Laravel installation and is used to test performanc
 
 ## Results
 
+The following results are for Laravel 9, running on PHP 8.1:
+
+|         | Native | Sail (macOS) | Sail + NFS Mount (macOS) | Sail (windows) | Sail - Mutagen |
+| ------- | ------ | ------------ | ------------------------ | -------------- | -------------- |
+| API     | 7.84   | 34.17        | 21.04                    |                |                |
+| Welcome | 6.93   | 39.03        | 19.11                    |                |                |
+
+The following results are for Laravel 8, running on PHP 8.0:
+
 |         | Native | Sail (macOS) | Sail + NFS Mount (macOS) | Sail (windows) | Sail (macOS - Delegated) | Sail (macOS - cached) | Sail - Experimental Virtualization | Sail - Mutagen | Sail (macOS + osxfs) |
 | ------- | ------ | ------------ | ------------------------ | -------------- | ------------------------ | --------------------- | ---------------------------------- | -------------- | -------------------- |
 | API     | 8.76   | 47.72        | 32                       | 15.78          | 39.27                    | 39.95                 | 156.63                             | 17.59          | 85.06                |
