@@ -8,6 +8,8 @@
         "hot": "mix watch --hot",
         "prod": "npm run production",
         "production": "mix --production",
+        "start": "sail up",
+        "start:nfs": "sail -f docker-compose.nfs.yml up",
         "benchmarks:welcome": "k6 run tests/Benchmarks/Welcome.js -i 10",
         "benchmarks:api": "k6 run tests/Benchmarks/Api.js -i 10"
     },
